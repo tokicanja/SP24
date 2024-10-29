@@ -33,8 +33,17 @@ position create_person(char* fname, char* lname, int year)
 
 	return new_person;
 }
+void insert_after(position prev, position new)
+{
+	if (prev != NULL && new != NULL)
+	{
+		new->next=prev->next;
+		prev->next = new;
 
-int prepend_list(position* head, char* fname, char* lname, int year)
+  }
+}
+
+int prepend_list(position head, char* fname, char* lname, int year)
 {
 	position new_person = NULL;
 	new_person = create_person(fname, lname, year);
@@ -43,10 +52,8 @@ int prepend_list(position* head, char* fname, char* lname, int year)
 		printf("Alokacija memorije neuspjesna!\n");
 		return -1;
 	}
-
-	new_person->next = *head;
-	*head = new_person;
-
+	insert_after(head, new_person);
+	
 	return 0;
 }
 
