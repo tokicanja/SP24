@@ -1,0 +1,10 @@
+Ivan Horvat 85.5
+Ana Kovac 92.0
+Marko Novak 78.5
+Lucija Juric 88.0
+Petra Saric 95.5
+Filip Babic 80.0
+Maja Curic 89.0
+Toni Mlinar 76.0
+Sara Grgic 91.0
+Petar Juric 87.5
